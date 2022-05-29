@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.bg1 {
+  background-image: url("spiderMan.jpg");
+  
+  background-color: linear-gradient(to bottom, rgba(0,0,0,0), #151515);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url('wanda-banner.jpg');
+  background-color: linear-gradient(to bottom, rgba(0,0,0,0), #151515);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg3 {
+  background-image: url('avenger.jpg');
+  /* background-color: linear-gradient(to bottom, rgba(0,0,0,0), #151515); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  height: 59px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-size: 30px;
+  color: #4dbf00;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 80vh;
+  padding: 50px;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}

@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='carousel.css') }}">
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='demo_card.css') }}">
+    <title>Flixplayer</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Flixplayer</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">
+                        <a class="nav-link" href="{{url_for('search')}}">Search</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <section id="home">
+                <div id="owl-demo" class="owl-carousel owl-theme">
+
+                    <div class="item">
+                        <div class="bg1 slide-content featured-content">
+                            <div class="item-content-wraper">
+                                <div class="item-content-title top-down">
+                                    Spider Man
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>9.5</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                    When bitten by a genetically modified spider, a nerdy, shy, and awkward high school
+                                    student gains spider-like abilities that he eventually must use to fight ...
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg2">
+                        <div class="slide-content featured-content">
+                            <div class="item-content-wraper">
+                                <div class="item-content-title top-down">
+                                    Wanda Vision
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>9.5</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                               <div class="item-content-description top-down delay-4">
+                                    WandaVision is not just an ordinary action packed superhero sitcom, It's a mixture
+                                    of drama, comedy, mystery & superpowers with bit of emotions.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg3">
+                        <div class="slide-content featured-content">
+                            <div class="item-content-wraper3">
+                                <div class="item-content-title top-down">
+                                    Avengers
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>9.5</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>120 mins</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                               <div class="item-content-description top-down delay-4">
+                                    'Avengers: Endgame' is a meditation on time – and it leaves us with a fittingly
+                                    age-old message: that we should cherish the moments we have on this earth with our
+                                    loved ones.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+         <div class="movie-list-container">
+            <h1 style="text-align: center; margin: 20px 20px; padding-inline-start: 42px;">NEW RELEASES</h1>
+            <main id="main"></main>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='carousel.js')}}"></script>
+ <script type="text/javascript" src="{{url_for('static', filename='demo_card.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#owl-demo").owlCarousel({
+
+                slideSpeed: 1000,
+                paginationSpeed: 1000,
+                items: 1,
+                loop: true,
+                nav: false,
+                rewind: true,
+                dots: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+            });
+
+        });
+    </script>
+</body>
+
+</html>
